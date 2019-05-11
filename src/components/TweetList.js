@@ -6,7 +6,7 @@ const TweetList = props => {
     return <div>We are loading...</div>;
   }
   return props.tweets.map(tweet => (
-    <div className="tweet-list__tweet--container" key={tweet.id}>
+    <div className="tweet-list__tweet--container" key={`tweet_${tweet.id}`}>
       <h5 className="tweet-list__tweet--author">{tweet.author}</h5>
       <span className="tweet-list__tweet--message">{tweet.message}</span>
     </div>

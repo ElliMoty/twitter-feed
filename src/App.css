@@ -34,3 +34,8 @@ body {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+
+.textarea {
+  display: block;
+  margin-bottom: 10px;
+}
