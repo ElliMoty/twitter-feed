@@ -7,7 +7,7 @@ class TweetForm extends Component {
     message: ""
   };
 
-  submit = async (event) => {
+  submit = async event => {
     event.preventDefault();
     console.log(this.state.message, this.props.author);
     const createTweetResult = await this.props.createTweetMutation({
@@ -15,7 +15,11 @@ class TweetForm extends Component {
         message: this.state.message,
         author: this.props.author
       }
-    })
+    });
+
+    if (createTweetResult.data.createTweet.id) {
+      this.props.handleSubmitSuccess();
+    }
   };
   render() {
     const { message } = this.state;
