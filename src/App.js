@@ -12,7 +12,7 @@ import TwitterFeed from './TwitterFeed'
 import './App.css'
 
 // Paste your service ID here
-const SERVICE_ID = ''
+const SERVICE_ID = 'cjuotafxg18zg0126s0f7sbzc'
 
 const httpLink = createHttpLink({ uri: `https://api.graph.cool/simple/v1/${SERVICE_ID}` })
 
