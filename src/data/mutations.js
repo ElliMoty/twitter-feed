@@ -6,5 +6,4 @@ mutation createTweet($message: String!, $author: String) {
         id
     }
 }
-
 `
